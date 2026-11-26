@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "fileutils"
+
+system("bundle exec rubocop") || abort("RuboCop failed")
+system("bundle exec rspec") || abort("RSpec failed")
